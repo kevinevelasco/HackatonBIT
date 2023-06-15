@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  font-family: 'Nanum Myeongjo', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+footer {
+  position:inherit;
+  margin-top: auto;
+}
+

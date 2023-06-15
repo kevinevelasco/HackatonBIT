@@ -1,0 +1,47 @@
+.Formulario-registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px; /* Aumenta el padding para dar más espacio al contenido */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Aumenta el radio para hacer las esquinas más redondeadas */
+  background-color: #f8f8f8;
+  width: 400px; /* Aumenta el ancho del formulario */
+  margin: 0 auto;
+  margin-top: 100px; /* Aumenta el espacio superior para separar del Navbar */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px; /* Aumenta el margen inferior para separar más del título */
+}
+
+.formulario-registro-div {
+  margin-bottom: 20px; /* Aumenta el margen inferior para separar los campos */
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px; /* Aumenta el tamaño de la fuente del label */
+}
+
+input {
+  padding: 10px; /* Aumenta el padding para dar más espacio a los inputs */
+  width: 100%;
+  font-size: 14px; /* Aumenta el tamaño de la fuente del input */
+}
+
+button {
+  padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+  font-size: 16px; /* Aumenta el tamaño de la fuente del botón */
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Aumenta el margen superior para separar del último campo */
+}
+
+button:hover {
+  background-color: #3367d6;
+}

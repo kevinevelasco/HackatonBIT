@@ -1,0 +1,51 @@
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px; /* Aumenta el padding para dar más espacio al contenido */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Aumenta el radio para hacer las esquinas más redondeadas */
+  background-color: #f7f7f7;
+  margin-top: 100px; /* Aumenta el espacio superior para separar del Navbar */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Aumenta el margen inferior para separar más del título */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container-div {
+  margin-bottom: 20px; /* Aumenta el margen inferior para separar los campos */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px; /* Aumenta el tamaño de la fuente del label */
+}
+
+input {
+  width: 100%;
+  padding: 10px; /* Aumenta el padding para dar más espacio a los inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Aumenta el tamaño de la fuente del input */
+}
+
+button {
+  padding: 15px; /* Aumenta el padding para hacer el botón más grande */
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
