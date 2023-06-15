@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
+import { Link, useNavigate } from 'react-router-dom';
 import './Products.css'
 
 const Products = ({ tipo, genero, limit}) => {
@@ -17,9 +18,9 @@ const Products = ({ tipo, genero, limit}) => {
         <div className="card" key={product.id}>
           <img src={product.img} alt="img-product" />
           <h3>{product.nombre}</h3>
-          <h4>{product.tipo}</h4>
-          <h4>{product.genero}</h4>
-          <button onClick={() => buyProducts(product)}>Comprar</button>
+          <Link to={"/dashboard"}>
+          <button onClick={() => buyProducts(product)}>Ver más</button>
+          </Link>
         </div>
       ))}
     </div>

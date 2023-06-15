@@ -1,0 +1,17 @@
+/* CaballeroCompleto.css */
+
+
+  
+  h1 {
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .Embed-container{
+    height: 1000px;
+    width: auto;
+    
+  }

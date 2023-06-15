@@ -22,7 +22,7 @@ const DataProvider = ({ children }) => {
       console.log(product);
       setCart([...cart, product]);
     } else {
-      alert('Debes iniciar sesión para comprar');
+      alert('Redireccionando al dashboard');
     }
     
     //variable para almacenar que producto se esta repitiendo

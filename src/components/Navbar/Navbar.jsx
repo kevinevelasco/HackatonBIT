@@ -11,13 +11,13 @@ const Navbar = () => {
   const [searchValue, setSearchValue] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const { cart } = useContext (dataContext);
+  const { cart } = useContext(dataContext);
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
   };
 
-  
+
   const handleSearch = () => {
     // Verificar si searchValue está vacío
     if (!searchValue) {
@@ -27,7 +27,7 @@ const Navbar = () => {
 
     const filteredResults = data.filter((product) => {
       const searchQuery = searchValue.toLowerCase();
-      const propertiesToSearch = [product.nombre, product.genero, product.tipo, product.referencia]; 
+      const propertiesToSearch = [product.nombre, product.genero, product.tipo, product.referencia];
 
       for (let i = 0; i < propertiesToSearch.length; i++) {
         const propertyValue = propertiesToSearch[i]; //
@@ -53,26 +53,22 @@ const Navbar = () => {
   return (
     <section className='nav-container'>
       <nav className='navbar'>
-      <h1 className='navbar-logo'><Link to={"/"}>Solarte Store</Link></h1>
+        <h1 className='navbar-logo'>
+          <Link to={"/"}>
+          <span className="logo-text">MedAnalysis</span>
+          <img src="/assets/logo.png" alt="logo" />
+        </Link></h1>
 
         <ul className="navbar-menu">
           <li>
-            <Link to={"/dama-completo"}>
-              <a href="#dama">Dama</a>
+            <Link to={'/'}>
+              <a href="#dama">Inicio</a>
             </Link>
-            <ul className="submenu">
-              <li><Link to={"/dama-formal"}>Formal</Link></li>
-              <li><Link to={"/dama-deportivo"}>Deportivo</Link></li>
-            </ul>
           </li>
           <li>
-            <Link to={"/caballero-completo"}>
-              <a href="#caballero">Caballero</a>
+            <Link to={"/Dashboard"}>
+              <a href="#caballero">Dashboard</a>
             </Link>
-            <ul className="submenu">
-              <li><Link to={"/caballero-formal"}>Formal</Link></li>
-              <li><Link to={"/caballero-deportivo"}>Deportivo</Link></li>
-            </ul>
           </li>
           <li>
             <Link to={"/contacto"}>
@@ -114,7 +110,7 @@ const Navbar = () => {
             <button className="navbar-logout" onClick={handleLogout}>Logout</button>
             <Link className="navbar-carrito" to={"/cart"}>
               🛒
-              {cart.length > 0 ? <TotalItems/> : null}
+              {cart.length > 0 ? <TotalItems /> : null}
             </Link>
           </>
         )}

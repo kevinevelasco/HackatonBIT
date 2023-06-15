@@ -1,0 +1,50 @@
+[
+  {
+    "id": 17,
+    "nombre": "Dengue",
+    "tipo": "Formal",
+    "genero": "Caballero",
+    "referencia": 13652,
+    "precio": 89900,
+    "descripcion": "Suela Resistente al Deslizamiento en goma, su altura es de 3/5, fabricado con una parte superior de tejido Donato que se asemeja a la ante, se pueden limpiar con agua y detergente suave",
+    "img": "https://www.cdc.gov/dengue/images/socialmedia/LVV7_Aedes_aegypti_Adult_Feeding_2022_029.jpg?_=11904",
+    "tallas": [34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
+    "cantidad": 1
+  },
+  {
+    "id": 18,
+    "nombre": "Agresión por animales",
+    "tipo": "Formal",
+    "genero": "Caballero",
+    "referencia": 32512,
+    "precio": 89500,
+    "descripcion": "Suela Resistente al Deslizamiento en goma, su altura es de 3/5, fabricado con una parte superior de tejido Donato que se asemeja a la ante, se pueden limpiar con agua y detergente suave",
+    "img": "https://i.pinimg.com/564x/32/f9/6b/32f96b2332bfe1d39ae273c61c958439.jpg",
+    "tallas": [34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
+    "cantidad": 1
+  },
+  {
+    "id": 19,
+    "nombre": "Varicela individual",
+    "tipo": "Formal",
+    "genero": "Caballero",
+    "referencia": 12364,
+    "precio": 98500,  
+    "descripcion": "Suela Resistente al Deslizamiento en goma, su altura es de 3/5, fabricado con una parte superior de tejido Donato que se asemeja a la ante, se pueden limpiar con agua y detergente suave",
+    "img": "https://i.pinimg.com/564x/20/ab/e0/20abe040eec172936bc7f5d970ccce72.jpg",
+    "tallas": [34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
+    "cantidad": 1
+  },
+  {
+    "id": 20,
+    "nombre": "Malaria ",
+    "tipo": "Formal",
+    "genero": "Caballero",
+    "referencia": 364212,
+    "precio": 95200,
+    "descripcion": "Suela Resistente al Deslizamiento en goma, su altura es de 3/5, fabricado con una parte superior de tejido Donato que se asemeja a la ante, se pueden limpiar con agua y detergente suave",
+    "img": "https://i.pinimg.com/564x/63/16/25/631625254bdd9ea2a4bc79b1e1a28eb6.jpg",
+    "tallas": [34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
+    "cantidad": 1
+  }
+]

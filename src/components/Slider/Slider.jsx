@@ -17,12 +17,12 @@ const Slider = () => {
       <section className='slider-container'>
         <img
           className={`slider-image ${currentSlide === 0 ? 'active' : ''}`}
-          src="/assets/slider1.jpg"
+          src="https://www.paho.org/sites/default/files/styles/max_1500x1500/public/2023-03/covid-ent-hipertension-2-1500x797.jpg?itok=y_0JNqmV"
           alt='Imagen 1'
         />
         <img
           className={`slider-image ${currentSlide === 1 ? 'active' : ''}`}
-          src="/assets/slider3.jpg"
+          src="https://img.freepik.com/premium-photo/healthcare-medical-doctor-working-with-professional-team-physician-nursing-assistant_34200-767.jpg?w=2000"
           alt='Imagen 2'
         />
         
