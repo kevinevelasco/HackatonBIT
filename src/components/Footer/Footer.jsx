@@ -7,11 +7,11 @@ const Footer = () => {
       <section className='footer'>
         <div>
           Síguenos en redes sociales:
-          <a href="https://www.instagram.com/solartestore/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.facebook.com/SolarteStore" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/kevinevelasco/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/kevincitoevelasco" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
         <div>
-          Derechos reservados Solarte Store &copy; {new Date().getFullYear()}
+          Derechos reservados MedAnalysis &copy; {new Date().getFullYear()}
         </div>
       </section>
     </footer>
