@@ -55,9 +55,9 @@ const Navbar = () => {
       <nav className='navbar'>
         <h1 className='navbar-logo'>
           <Link to={"/"}>
-          <span className="logo-text">MedAnalysis</span>
-          <img src="/assets/logo.png" alt="logo" />
-        </Link></h1>
+            <span className="logo-text">MedAnalysis</span>
+            <img src="/assets/logo.png" alt="logo" />
+          </Link></h1>
 
         <ul className="navbar-menu">
           <li>
@@ -66,9 +66,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/Dashboard"}>
-              <a href="#caballero">Dashboard</a>
-            </Link>
+            {loggedInUser && (
+              <Link to={"/Dashboard"}>
+                <a href="#caballero">Dashboard</a>
+              </Link>
+            )}
           </li>
           <li>
             <Link to={"/contacto"}>
@@ -97,21 +99,29 @@ const Navbar = () => {
               </button>
               {searchResults.length > 0 && (
                 <ul className="search-results">
-                  {searchResults.map((product) => (
-                    <li key={product.id}>{product.nombre}</li>
-                  ))}
+                  {searchResults
+                    .filter((product, index, self) => {
+                      // Devuelve true solo si el nombre del producto no se encuentra en ningún otro elemento anterior
+                      return (
+                        self.findIndex((p) => p.nombre === product.nombre) === index
+                      );
+                    })
+                    .map((product) => (
+                      <li key={product.id}>{product.nombre}</li>
+                    ))}
                 </ul>
               )}
+
             </div>
           </>)
         }
         {loggedInUser && (
           <>
             <button className="navbar-logout" onClick={handleLogout}>Logout</button>
-            <Link className="navbar-carrito" to={"/cart"}>
+            {/*   <Link className="navbar-carrito" to={"/cart"}>
               🛒
               {cart.length > 0 ? <TotalItems /> : null}
-            </Link>
+            </Link>*/}
           </>
         )}
       </nav>

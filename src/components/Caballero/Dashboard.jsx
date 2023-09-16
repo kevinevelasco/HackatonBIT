@@ -12,7 +12,7 @@ export const Dashboard = () => {
         <Navbar/>
       
        <h1>Enfermedades y departamentos </h1>
-       <PowerBIEmbed embedConfig={
+       {/*<PowerBIEmbed embedConfig={
         {
           type: 'report', // Supported types: report, dashboard, tile, visual, and qna.
           id: '380995f3-bbba-45e0-871d-02ee53240b0e',
@@ -53,7 +53,11 @@ export const Dashboard = () => {
             window.report = embeddedReport;
           }
         }>
-      </PowerBIEmbed>
+      </PowerBIEmbed>*/}
+
+      {/*<iframe title="Enfermedades" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=380995f3-bbba-45e0-871d-02ee53240b0e&autoAuth=true&embeddedDemo=true" frameborder="0" allowFullScreen="true">
+      </iframe>*/}
+      <iframe title="Enfermedades" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=380995f3-bbba-45e0-871d-02ee53240b0e&autoAuth=true&ctid=fd63fd65-bac7-4ca5-8347-12c279c3494c" frameborder="0" allowFullScreen="true"></iframe>
     </section>
   )
 }
